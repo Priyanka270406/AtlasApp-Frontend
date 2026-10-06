@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #172033;
+  background: #f6f8fc;
+}
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fc;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 42px;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(20, 30, 55, 0.08);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-header h1 {
+  margin: 0 0 9px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #172033;
+}
+
+.auth-header p {
+  margin: 0;
+  color: #7a8496;
+  font-size: 14px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #344054;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #a1a9b8;
+}
+
+.form-group input:focus {
+  border-color: #5b6ee1;
+  box-shadow: 0 0 0 3px rgba(91, 110, 225, 0.1);
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 8px;
+  background: #4f63d8;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #4054c5;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   MESSAGES
+========================= */
+
+.success {
+  margin-top: 18px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  background: #ecfdf3;
+  color: #087443;
+  border: 1px solid #c9f0da;
+  text-align: center;
+  font-size: 13px;
+}
+
+.error {
+  margin-top: 18px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  background: #fff1f1;
+  color: #c62828;
+  border: 1px solid #ffd4d4;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* =========================
+   SWITCH AUTH
+========================= */
+
+.switch-auth {
+  margin-top: 25px;
+  text-align: center;
+  color: #7a8496;
+  font-size: 14px;
+}
+
+.switch-auth button {
+  border: none;
+  background: none;
+  color: #4f63d8;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.switch-auth button:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 68px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 1px solid #e8ebf1;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #4f63d8;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.nav-right strong {
+  color: #202939;
+  font-weight: 600;
+}
+
+.logout-btn {
+  border: none;
+  background: #f04444;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  max-width: 1100px;
+  margin: 38px auto 34px;
+  padding: 48px;
+  border-radius: 16px;
+  color: white;
+  background: linear-gradient(120deg, #5268df, #7350a8);
+  box-shadow: 0 12px 30px rgba(55, 65, 120, 0.14);
+}
+
+.hero h1 {
+  margin: 0 0 13px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 680px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================
+   CARDS SECTION
+========================= */
+
+.cards-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.cards-section h2 {
+  margin: 0 0 22px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #202939;
+  letter-spacing: -0.4px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(20, 30, 55, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(20, 30, 55, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 195px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 9px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #202939;
+}
+
+.card-content p {
+  color: #667085;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.card-content button {
+  border: none;
+  background: #4f63d8;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card-content button:hover {
+  background: #4054c5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-section {
+    padding: 20px;
+  }
+
+  .hero {
+    margin: 25px 20px;
+    padding: 35px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-right span {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    width: 100%;
+    padding: 30px 22px;
+  }
+
+  .auth-header h1 {
+    font-size: 25px;
+  }
+
+  .hero {
+    padding: 28px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+}
